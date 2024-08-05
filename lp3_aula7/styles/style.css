@@ -1,0 +1,78 @@
+:root{
+    --bg-primary: #EFEFEF;
+    --bg-gradient: linear-gradient(to right,#006494, #1B98E0);
+    --dark-blue: #13293D;
+    --medium-blue: #006494;
+    --light-blue: #1B98E0;
+}
+
+::-webkit-scrollbar-track{
+    background: var(--bg-primary);
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+/*Menu*/
+.container-menu{
+    background: var(--bg-gradient);
+    filter: brightness(1.4);
+}
+
+.container-menu nav a{
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+}
+
+.container-data{
+    background-color: var(--bg-primary);
+}
+
+.btn-blue{
+    background-color: var(--medium-blue);
+    color: white;
+}
+
+.btn-blue:hover{
+    background-color: var(--medium-blue);
+    color: white;
+    filter: brightness(.9);
+}
+
+/*Form*/
+.input-blue{
+    border: none;
+    background-color: var(--bg-primary);
+    border-bottom: 2px var(--dark-blue) solid;
+    border-radius: 0;
+    transition: none;
+}
+
+.input-blue:focus{
+    box-shadow: 0 0 0 0;
+    background-color: var(--bg-primary);
+    border-bottom: 2px var(--dark-blue) solid;
+    outline: 0;
+} 
+
+.input-blue::placeholder{
+    color: var(--dark-blue);
+}
+
+.textarea-blue{
+    background-color: var(--bg-primary);
+    border: 2px var(--dark-blue) solid;
+    transition: none;
+}
+
+.textarea-blue:focus{
+    box-shadow: 0 0 0 0;
+    background-color: var(--bg-primary);
+    border: 2px var(--dark-blue) solid;
+    outline: 0;
+}
